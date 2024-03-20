@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my Unknown page </h1>
+  
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="A">Enter your value</label>
+        <input type="text" name="a" >
+        <label for="A">Enter your  b value</label>
+        <input type="number" name="b" >
+        <button type="submit" >Submit</button>
+    </form>
+    <h1>My value of A is : {{a}}</h1>
+    <h1>My value of A is : {{b}}</h1>
+
+
+    <h1>My value of A is : {{sum}}</h1>
+</body>
+</html>
